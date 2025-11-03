@@ -57,11 +57,12 @@
     // Initialize YouTube player when API is ready
     function onYouTubeIframeAPIReady() {
       new YT.Player('player', {
+        width: '100%',
+        height: '100%',
         videoId: 'YGAsG6_JgAI', // Replace with your video ID
         playerVars: {
           rel: 0,
           modestbranding: 1,
-          'controls': 0,
         }
       });
     }
